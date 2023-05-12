@@ -19,7 +19,7 @@ public class FretePadrao extends Frete{
     public double calcularFrete() {
         // O cálculo do FretePadrao é realizado com a seguinte fórmula: distancia * valorPorKm;        
         double total = super.getDistanciaEmKm() * super.getValorPorKm();
-        
+       
         return total;
     }
          

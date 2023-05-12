@@ -19,6 +19,7 @@ public class FreteExpresso extends Frete {
         //deixando o nivel de urgencia já predefinido 
         double nivelDeUrgencia = 9.0;
         double total = (super.getDistanciaEmKm() * super.getDistanciaEmKm()) + (nivelDeUrgencia * 100);
+        
         return total;
     }
     

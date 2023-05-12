@@ -4,18 +4,35 @@
  */
 package com.mycompany.atividadefret;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.List;
+
 /**
  *
  * @author João Igor
  */
 public class CadastroFrete {
     
-    ArrayList<String> fretes = new ArrayList<String>();
-    Scanner ler = new Scanner(System.in);
+    List<Frete> lista = new ArrayList<>();
     
-    for(int i = 0; i < 5; i++){
-        fretes.add(ler.next());
-}
+    
+    public void adicionarFrete(Frete frete){
+        lista.add(frete);
+ 
+    }
+    
+    public double valorTotal(){
+        double total = 0;
+        for (Frete frete: lista){
+            
+            total += frete.calcularFrete();
+        }
+        
+        return total;
+    }
+        
+    
     
 }
+
+    
+

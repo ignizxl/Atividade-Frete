@@ -21,8 +21,8 @@ public class FreteSuperExpresso extends Frete {
         //deixando os valores do seguro e nivel de urgencia já predifinidos 
         double seguro = 0.15;
         double nivelDeUrgencia = 10.0;
-        double total = ((super.getDistanciaEmKm() * super.getValorPorKm()) + (seguro * nivelDeUrgencia));
-
+        double total = ((super.getDistanciaEmKm() * super.getValorPorKm()) + (seguro * nivelDeUrgencia)); 
+        
         return total;
     }
 }
