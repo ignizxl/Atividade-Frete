@@ -9,31 +9,23 @@ package com.mycompany.atividadefret;
  * @author João Igor
  */
 public abstract class Frete implements Fretavel {
-    
+    //atributos
     private double distanciaEmKm;
     private double valorPorKm;
-
+    
+    //método construdo
     public Frete(double distanciaEmKm, double valorPorKm) {
         this.distanciaEmKm = distanciaEmKm;
         this.valorPorKm = valorPorKm;
     }
     
+    //métodos de acesso
     public double getDistanciaEmKm() {
         return distanciaEmKm;
-    }
-
-    public void setDistanciaEmKm(double distanciaEmKm) {
-        this.distanciaEmKm = distanciaEmKm;
     }
 
     public double getValorPorKm() {
         return valorPorKm;
     }
-
-    public void setValorPorKm(double valorPorKm) {
-        this.valorPorKm = valorPorKm;
-    }
-    
-    
-    
+   
 }

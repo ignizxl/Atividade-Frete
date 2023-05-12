@@ -17,6 +17,7 @@ public class FreteSuperExpresso extends Frete {
   
     @Override
     public double calcularFrete(){
+        
         //O cálculo do FreteSuperExpresso é realizado com a seguinte fórmula: (distancia * valorPorKm) + (nívelUrgencia * 100) + valorDoSeguro;
         //deixando os valores do seguro e nivel de urgencia já predifinidos 
         double seguro = 0.15;

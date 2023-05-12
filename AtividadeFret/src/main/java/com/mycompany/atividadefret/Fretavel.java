@@ -9,7 +9,7 @@ package com.mycompany.atividadefret;
  * @author João Igor
  */
 public interface Fretavel {
-    
+    //este método calcularFrete vai ser implementado 
     public double calcularFrete();
     
 }
